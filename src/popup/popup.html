@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=360, height=600">
+  <title>Petit Wallet</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Petit</h1>
+      <p class="subtitle">Cardano Wallet</p>
+    </header>
+
+    <main>
+      <div class="balance-section">
+        <p class="balance-label">Balance</p>
+        <p class="balance-amount">0.00 ADA</p>
+        <p class="balance-usd">$0.00 USD</p>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" id="createWalletBtn">
+          Create Wallet
+        </button>
+        <button class="btn btn-secondary" id="importWalletBtn">
+          Import Wallet
+        </button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="network">Testnet (Preview)</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
