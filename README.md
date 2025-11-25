@@ -18,6 +18,31 @@ Through the development of Petit, we aim to gain proficiency in:
 - **API Integration** - Implementing third-party APIs such as CoinGecko for real-time data
 - **UI/UX Development** - Building intuitive and responsive user interfaces
 
+## Installation
+
+### Prerequisites
+- Google Chrome browser
+
+### Steps
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yan-mei/petit.git
+   ```
+
+2. **Open Chrome Extensions page**
+   - Navigate to `chrome://extensions/` in your Chrome browser
+
+3. **Enable Developer Mode**
+   - Toggle the "Developer mode" switch in the top right corner
+
+4. **Load the extension**
+   - Click "Load unpacked"
+   - Select the `src` folder inside the cloned repository
+
+5. **Start using Petit**
+   - Click the Petit icon in your Chrome toolbar to open the wallet
+
 ## Contributors
 
 - Mei
