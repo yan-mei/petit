@@ -4,6 +4,12 @@
 
 Petit is a lightweight Cardano wallet built as a mobile application for iOS. This project is a collaborative learning initiative focused on gaining hands-on experience with mobile app development and blockchain technology.
 
+## Screenshot
+
+<p align="center">
+  <img src="screenshots/home.png" width="300" alt="Petit Wallet Home Screen" />
+</p>
+
 ## Purpose
 
 This project serves as a practical learning environment to deepen our technical knowledge through real-world development experience.
