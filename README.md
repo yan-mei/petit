@@ -25,6 +25,12 @@ Through the development of Petit, we aim to gain proficiency in:
 - **Language**: JavaScript
 - **Testing**: Cucumber (BDD)
 
+## Project Phases
+
+1. **Build the App** - Develop the Cardano wallet mobile application
+2. **Set Up the Simulator** - Configure iOS simulator environment
+3. **Write E2E Test Automations** - Create end-to-end tests using Cucumber
+
 ## Installation
 
 ### Prerequisites
