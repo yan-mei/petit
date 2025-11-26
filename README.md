@@ -12,7 +12,7 @@ This project serves as a practical learning environment to deepen our technical 
 
 Through the development of Petit, we aim to gain proficiency in:
 
-- **iOS App Development** - Understanding the architecture, implementation, and deployment of mobile applications using Xcode
+- **Mobile App Development** - Building cross-platform mobile applications using React Native
 - **Quality Assurance** - Practicing BDD (Behavior-Driven Development) with Cucumber for automated testing
 - **Git & GitHub Workflow** - Practicing branch management, code reviews, and collaborative development processes
 - **API Integration** - Implementing third-party APIs such as CoinGecko for real-time data
@@ -20,9 +20,10 @@ Through the development of Petit, we aim to gain proficiency in:
 
 ## Development Environment
 
-- **IDE**: Xcode 16.x
+- **Framework**: React Native
 - **Platform**: iOS
-- **Language**: JavaScript
+- **Language**: JavaScript / TypeScript
+- **IDE**: Xcode 16.x (for iOS build), VS Code (for development)
 - **Testing**: Cucumber (BDD)
 
 ## Project Phases
@@ -35,23 +36,32 @@ Through the development of Petit, we aim to gain proficiency in:
 
 ### Prerequisites
 - macOS
+- Node.js (v18 or later)
 - Xcode 16.x or later
+- CocoaPods
 
 ### Steps
 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yan-mei/petit.git
+   cd petit
    ```
 
-2. **Open the project in Xcode**
-   - Open Xcode
-   - Select "Open Existing Project"
-   - Navigate to the cloned repository and open the `.xcodeproj` file
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-3. **Build and Run**
-   - Select a simulator or connected device
-   - Press `Cmd + R` to build and run the app
+3. **Install iOS dependencies**
+   ```bash
+   cd ios && pod install && cd ..
+   ```
+
+4. **Run the app**
+   ```bash
+   npm run ios
+   ```
 
 ## Contributors
 
