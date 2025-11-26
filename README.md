@@ -13,7 +13,7 @@ This project serves as a practical learning environment to deepen our technical 
 Through the development of Petit, we aim to gain proficiency in:
 
 - **iOS App Development** - Understanding the architecture, implementation, and deployment of mobile applications using Xcode
-- **Quality Assurance** - Establishing testing procedures and verification workflows for mobile applications
+- **Quality Assurance** - Practicing BDD (Behavior-Driven Development) with Cucumber for automated testing
 - **Git & GitHub Workflow** - Practicing branch management, code reviews, and collaborative development processes
 - **API Integration** - Implementing third-party APIs such as CoinGecko for real-time data
 - **UI/UX Development** - Building intuitive and responsive user interfaces
@@ -23,6 +23,7 @@ Through the development of Petit, we aim to gain proficiency in:
 - **IDE**: Xcode 16.x
 - **Platform**: iOS
 - **Language**: JavaScript
+- **Testing**: Cucumber (BDD)
 
 ## Installation
 
