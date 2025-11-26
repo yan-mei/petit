@@ -22,7 +22,7 @@ Through the development of Petit, we aim to gain proficiency in:
 
 - **IDE**: Xcode 16.x
 - **Platform**: iOS
-- **Language**: Swift
+- **Language**: JavaScript
 
 ## Installation
 
