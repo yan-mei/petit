@@ -18,7 +18,7 @@ This project serves as a practical learning environment to deepen our technical 
 
 Through the development of Petit, we aim to gain proficiency in:
 
-- **Mobile App Development** - Building cross-platform mobile applications using React Native
+- **Mobile App Development** - Building cross-platform mobile applications using Expo / React Native
 - **Quality Assurance** - Practicing BDD (Behavior-Driven Development) with Cucumber for automated testing
 - **Git & GitHub Workflow** - Practicing branch management, code reviews, and collaborative development processes
 - **API Integration** - Implementing third-party APIs such as CoinGecko for real-time data
@@ -26,10 +26,9 @@ Through the development of Petit, we aim to gain proficiency in:
 
 ## Development Environment
 
-- **Framework**: React Native
-- **Platform**: iOS
-- **Language**: JavaScript / TypeScript
-- **IDE**: Xcode 16.x (for iOS build), VS Code (for development)
+- **Framework**: Expo / React Native
+- **Platform**: iOS, Android, Web
+- **Language**: TypeScript
 - **Testing**: Cucumber (BDD)
 
 ## Project Phases
@@ -41,10 +40,9 @@ Through the development of Petit, we aim to gain proficiency in:
 ## Installation
 
 ### Prerequisites
-- macOS
 - Node.js (v18 or later)
-- Xcode 16.x or later
-- CocoaPods
+- Expo CLI (`npm install -g expo-cli`)
+- Xcode (for iOS simulator)
 
 ### Steps
 
@@ -59,15 +57,13 @@ Through the development of Petit, we aim to gain proficiency in:
    npm install
    ```
 
-3. **Install iOS dependencies**
+3. **Start the app**
    ```bash
-   cd ios && pod install && cd ..
+   npx expo start
    ```
 
-4. **Run the app**
-   ```bash
-   npm run ios
-   ```
+4. **Run on iOS simulator**
+   - Press `i` in the terminal to open iOS simulator
 
 ## Contributors
 

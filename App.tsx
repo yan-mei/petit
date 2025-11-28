@@ -2,17 +2,16 @@
  * Petit - A Simple Cardano Wallet
  */
 
-import React from 'react';
+import { StatusBar } from 'expo-status-bar';
 import {
   SafeAreaView,
-  StatusBar,
   StyleSheet,
   Text,
   TouchableOpacity,
   View,
 } from 'react-native';
 
-function App(): React.JSX.Element {
+export default function App() {
   const handleCreateWallet = () => {
     console.log('Create Wallet pressed');
     // TODO: Implement wallet creation
@@ -25,7 +24,7 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="dark-content" />
+      <StatusBar style="dark" />
 
       {/* Header */}
       <View style={styles.header}>
@@ -151,5 +150,3 @@ const styles = StyleSheet.create({
     fontSize: 12,
   },
 });
-
-export default App;
