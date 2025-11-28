@@ -2,7 +2,7 @@
 
 ## Overview
 
-Petit is a lightweight Cardano wallet built as a mobile application for iOS. This project is a collaborative learning initiative focused on gaining hands-on experience with mobile app development and blockchain technology.
+Petit is a lightweight, read-only Cardano wallet built as a mobile application for iOS. This project is a collaborative learning initiative focused on gaining hands-on experience with mobile app development and blockchain technology.
 
 ## Screenshot
 
@@ -14,28 +14,54 @@ Petit is a lightweight Cardano wallet built as a mobile application for iOS. Thi
 
 This project serves as a practical learning environment to deepen our technical knowledge through real-world development experience.
 
+## Features (MVP)
+
+- **Import/Restore Wallet** - Restore existing wallet using 24-word recovery phrase
+- **View Balance** - Display ADA balance from Cardano blockchain
+- **Read-Only** - No transaction capabilities in first release
+
 ## Learning Objectives
 
 Through the development of Petit, we aim to gain proficiency in:
 
 - **Mobile App Development** - Building cross-platform mobile applications using Expo / React Native
-- **Quality Assurance** - Practicing BDD (Behavior-Driven Development) with Cucumber for automated testing
+- **Quality Assurance** - Practicing E2E testing with Maestro
 - **Git & GitHub Workflow** - Practicing branch management, code reviews, and collaborative development processes
-- **API Integration** - Implementing third-party APIs such as CoinGecko for real-time data
+- **API Integration** - Implementing Cardano APIs (Muesli, Blockfrost)
 - **UI/UX Development** - Building intuitive and responsive user interfaces
 
-## Development Environment
+## Technical Stack
 
-- **Framework**: Expo / React Native
-- **Platform**: iOS, Android, Web
-- **Language**: TypeScript
-- **Testing**: Cucumber (BDD)
+| Category | Technology |
+|----------|------------|
+| **Framework** | Expo / React Native |
+| **Language** | TypeScript |
+| **Blockchain** | Cardano (Preprod Testnet) |
+| **APIs** | Muesli API, Blockfrost |
+| **E2E Testing** | Maestro |
+| **Distribution** | Simulator, TestFlight |
+
+## Dependencies (MVP)
+
+- `expo` - React Native framework
+- `cardano-serialization-lib` - Address decoding, blockchain data parsing
+- `axios` - API calls
+- Expo config - Environment variables
+
+## UI Flow
+
+```
+1. Import Wallet    → Title "Petit" + "Restore Wallet" button
+2. Recovery Phrase  → 24-word input box + "Next" button (greyed out if invalid)
+3. Loading          → Animated loading screen
+4. Balance Display  → Simple ADA balance (no fiat conversion)
+```
 
 ## Project Phases
 
 1. **Build the App** - Develop the Cardano wallet mobile application
 2. **Set Up the Simulator** - Configure iOS simulator environment
-3. **Write E2E Test Automations** - Create end-to-end tests using Cucumber
+3. **Write E2E Test Automations** - Create end-to-end tests using Maestro
 
 ## Installation
 
@@ -64,6 +90,14 @@ Through the development of Petit, we aim to gain proficiency in:
 
 4. **Run on iOS simulator**
    - Press `i` in the terminal to open iOS simulator
+
+## Environment Variables
+
+```
+MUESLI_API_URL=https://api.muesliswap.com/
+BLOCKFROST_API_URL=https://cardano-preprod.blockfrost.io/api/
+NETWORK=preprod
+```
 
 ## Contributors
 
