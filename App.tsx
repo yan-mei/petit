@@ -12,14 +12,9 @@ import {
 } from 'react-native';
 
 export default function App() {
-  const handleCreateWallet = () => {
-    console.log('Create Wallet pressed');
-    // TODO: Implement wallet creation
-  };
-
-  const handleImportWallet = () => {
-    console.log('Import Wallet pressed');
-    // TODO: Implement wallet import
+  const handleRestoreWallet = () => {
+    console.log('Restore Wallet pressed');
+    // TODO: Navigate to recovery phrase screen
   };
 
   return (
@@ -32,28 +27,20 @@ export default function App() {
         <Text style={styles.subtitle}>Cardano Wallet</Text>
       </View>
 
-      {/* Balance Section */}
-      <View style={styles.balanceSection}>
-        <Text style={styles.balanceLabel}>Balance</Text>
-        <Text style={styles.balanceAmount}>0.00 ADA</Text>
-        <Text style={styles.balanceUsd}>$0.00 USD</Text>
-      </View>
+      {/* Spacer */}
+      <View style={styles.spacer} />
 
-      {/* Action Buttons */}
+      {/* Action Button */}
       <View style={styles.actions}>
-        <TouchableOpacity style={styles.btnPrimary} onPress={handleCreateWallet}>
-          <Text style={styles.btnPrimaryText}>Create Wallet</Text>
-        </TouchableOpacity>
-
-        <TouchableOpacity style={styles.btnSecondary} onPress={handleImportWallet}>
-          <Text style={styles.btnSecondaryText}>Import Wallet</Text>
+        <TouchableOpacity style={styles.btnPrimary} onPress={handleRestoreWallet}>
+          <Text style={styles.btnPrimaryText}>Restore Wallet</Text>
         </TouchableOpacity>
       </View>
 
       {/* Footer */}
       <View style={styles.footer}>
         <View style={styles.networkBadge}>
-          <Text style={styles.networkText}>Testnet (Preview)</Text>
+          <Text style={styles.networkText}>Preprod Testnet</Text>
         </View>
       </View>
     </SafeAreaView>
@@ -68,79 +55,43 @@ const styles = StyleSheet.create({
   },
   header: {
     alignItems: 'center',
-    marginTop: 32,
-    marginBottom: 32,
+    marginTop: 80,
   },
   title: {
-    fontSize: 32,
+    fontSize: 48,
     fontWeight: '700',
     color: '#ff6b9d',
   },
   subtitle: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#b8859f',
-    marginTop: 4,
+    marginTop: 8,
   },
-  balanceSection: {
-    alignItems: 'center',
-    backgroundColor: '#fff0f3',
-    borderRadius: 16,
-    padding: 32,
-    marginBottom: 32,
-    borderWidth: 1,
-    borderColor: '#ffccd9',
-  },
-  balanceLabel: {
-    fontSize: 14,
-    color: '#b8859f',
-    marginBottom: 8,
-  },
-  balanceAmount: {
-    fontSize: 36,
-    fontWeight: '700',
-    color: '#ff6b9d',
-  },
-  balanceUsd: {
-    fontSize: 16,
-    color: '#ff99b8',
-    marginTop: 4,
+  spacer: {
+    flex: 1,
   },
   actions: {
-    gap: 12,
+    marginBottom: 32,
   },
   btnPrimary: {
     backgroundColor: '#ff6b9d',
     borderRadius: 12,
-    padding: 16,
+    padding: 18,
     alignItems: 'center',
   },
   btnPrimaryText: {
     color: '#ffffff',
-    fontSize: 16,
-    fontWeight: '600',
-  },
-  btnSecondary: {
-    borderWidth: 2,
-    borderColor: '#ff6b9d',
-    borderRadius: 12,
-    padding: 16,
-    alignItems: 'center',
-  },
-  btnSecondaryText: {
-    color: '#ff6b9d',
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: '600',
   },
   footer: {
-    flex: 1,
-    justifyContent: 'flex-end',
     alignItems: 'center',
     paddingBottom: 16,
   },
   networkBadge: {
     backgroundColor: '#fff0f3',
-    paddingVertical: 4,
-    paddingHorizontal: 12,
+    paddingVertical: 6,
+    paddingHorizontal: 14,
     borderRadius: 12,
     borderWidth: 1,
     borderColor: '#ffccd9',
